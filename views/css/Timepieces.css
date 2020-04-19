@@ -1,0 +1,54 @@
+/*The following code belongs to the github account: https://github.com/mikhail-cct/CA1-In-class-Demo.git, 
+/*which was adjusted and mofidied in order to create the "Timepieces" Web App */
+
+html {
+  position: relative;/*It means the element is positioned relative to its normal position. */
+  min-height: 100%;/* If the height of the element is less than 100%, it wil be treated as height of 100%*/
+}
+
+body {
+  /* the image was taken form the website: https://unsplash.com/ */
+background-image: url(https://images.unsplash.com/photo-1544171779-783118e110f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+background-size: cover; /*the image will fill the element while maintaining its aspect ratio*/
+background-position: center;/* defining where a background image should be positioned within an element. */
+font-family: Lato;/*type of designed font*/
+color: white;/*color type of the body*/
+margin-bottom: 60px;/* This margin is measured and related by the footer height */
+}
+
+
+
+
+.footer {
+  position: absolute;/*  is positioned relative to the nearest positioned ancestor*/
+  bottom: 0;/*there is no margin in the bottom*/
+  width: 100%;/*Making the element's content area exactly equal to the width of its parent*/
+  height: 60px; /* Implementing the height of the footer area */
+  line-height: 60px; /* Where the text is is vertically centered*/
+  background-color: #f5f5f5;/*Giving the color to the background */
+}
+table, th, td {
+     border-collapse: collapse;/*sets table, headers, and  borders should collapse into a single border or be separated as HTML*/
+     border: 1px solid black;/*sets the color of the border with a specific height*/
+     text-align: center;/*centering the text*/
+
+}
+ table {
+     border-collapse: collapse;/*sets whether table borders should collapse into a single border or be separated as HTML*/
+     width:100%;/*Making the element's content area of the table exactly equal to the width of its parent*/
+}
+ td, th { 
+     border: 0.5px solid #67a9eb; /*giving the size border for the entire table through a solid line and a especific type of color */
+     padding: 5.0rem;/*Generating space around the element's content, inside of any defined borders*/
+     text-align: center;/* centering the text in relation to the section, brand, price, certified precision, discount and stock content areas*/
+     outline-style: ridge; /*Specifying a 3D ridged outline where the effect depends on the outline-color blue*/
+     outline-color: rgb(113, 195, 233);/* This is the line that is drawn outside the borders to make the element "stand out"*/
+}
+ th {
+     font-weight: bolder;/*Setting the weight (boldness) of the font, normal(400) is the default, and in this case is 700 which means Bold*/
+     text-align:center;/* centering the text only for the text headers*/
+}
+.selected {
+            background-color: #3591dc;/*Styling the background with a specific color*/
+            color: #FFF;/*Using this hex color code which is a web safe color*/
+}
