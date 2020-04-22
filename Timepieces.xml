@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue>  <!--here we grab all the info to put it into the form for the user features input and we divide everything for the form -->
-  <section name="Sport Watches">   <!--this is a secction -->
+<!--Here I am adding the XSL style sheet reference to my XML document  -->
+<?xml-stylesheet type="text/xsl" href="Timepieces.xsl"?>
+
+<catalogue>
+  <section name="Sport Watches">
     <watch original="true">
-      <brand>Moonwatch Omega</brand>
-      <price>10,100.00</price>
+      <brand> Moonwatch Omega</brand>
+      <price>€10,100.00</price>
       <precision>8800</precision>
       <discount>20%</discount>
       <stock>Available</stock>
     </watch>
     <watch>
       <brand>DIVER 300M OMEGA </brand>
-      <price>9,000.00</price>
+      <price>€9,000.00</price>
       <precision>9000</precision>
       <discount>20%</discount>
       <stock>Available</stock>
     </watch>
     <watch>
       <brand>Patek Philippe Men's Complication Ref. 5905R</brand>
-      <price>20,000.00</price>
+      <price>€20,000.00</price>
       <precision>9000</precision>
       <discount>20%</discount>
       <stock>Available</stock>
@@ -30,100 +33,96 @@
       <stock>Available</stock>
     </watch>
   </section>
-  <section name="Casual Watches"><!--this is a secction -->
+  <section name="Casual Watches">
     <watch>
       <brand>Rolex Sea-Dweller</brand>
-      <price>15,000.00</price>
+      <price>€15,000.00</price>
       <precision>10000</precision>
       <discount>30%</discount>
       <stock>unavailable</stock>
     </watch>
     <watch>
       <brand>Rolex GMT-Master II</brand>
-      <price>12,000.00</price>
+      <price>€12,000.00</price>
       <precision>1000</precision>
       <discount>10%</discount>
       <stock>unavailable</stock>
     </watch>
     <watch original="true">
       <brand>Bvulgary Octo Finissimo Chrono GMT </brand>
-      <price>17,000.00</price>
+      <price>€17,000.00</price>
       <precision>6000</precision>
       <discount>10%</discount>
       <stock>Available</stock>
     </watch>
   </section>
-  <section name="Luxury Watches"><!--this is a secction -->
+  <section name="Luxury Watches">
     <watch>
       <brand>Patek Philippe Men's Grand Complication Ref. 5078G</brand>
-      <price>23,000.00</price>
+      <price>€23,000.00</price>
       <precision>6300</precision>
       <discount>15%</discount>
       <stock>Available</stock>
     </watch>
     <watch original="true">
       <brand>Bvulgary Octo Watch</brand>
-      <price>10,300.00</price>
+      <price>€10,300.00</price>
       <precision>6300</precision>
       <discount>40%</discount>
       <stock>Available</stock>
     </watch>
     <watch>
       <brand>Rolex YACHT-MASTER 42</brand>
-      <price>13,000.00</price>
+      <price>€13,000.00</price>
       <precision>1950</precision>
       <discount>19%</discount>
       <stock>Unavailable</stock>
     </watch>
   </section>
-  <section name="Dive Watches"><!--this is a secction -->
+  <section name="Dive Watches">
     <watch>
       <brand>Ballon Bleu de Cartier</brand>
-      <price>5,650</price>
+      <price>€5,650</price>
       <precision>3200</precision>
       <discount>No</discount>
       <stock>Available</stock>
     </watch>
     <watch>
       <brand>Hublot Big Bang Unico Titanium</brand>
-      <price>14,700</price>
+      <price>€14,700</price>
       <precision>10100</precision>
       <discount>10%</discount>
       <stock>Available</stock>
     </watch>
     <watch original="true">
       <brand>Hublot Big Bang White Diamonds</brand>
-      <price>18,200</price>
+      <price>€18,200</price>
       <precision>10100</precision>
       <discount>10%</discount>
       <stock>Available</stock>
     </watch>
   </section>
-  <section name="Chronograph Watches"><!--this is a secction -->
+  <section name="Chronograph Watches">
     <watch>
       <brand>Mille Miglia Classic Chronograph</brand>
-      <price>4,580</price>
+      <price>€4,580</price>
       <precision>3550</precision>
       <discount>30%</discount>
       <stock>Available</stock>
     </watch>
     <watch>
       <brand>Chopard Mille Miglia Classic</brand>
-      <price>4,390</price>
+      <price>€4,390</price>
       <precision>3550</precision>
       <discount>30%</discount>
       <stock>Available</stock>
     </watch>
     <watch original="true">
       <brand>Chopard Mille Miglia 2017 Race</brand>
-      <price>6,260</price>
+      <price>€6,260</price>
       <precision>3550</precision>
       <discount>30%</discount>
       <stock>Available</stock>
     </watch>
   </section>
 </catalogue>
-
-
-<!-- The following code belongs to the github account: https://github.com/mikhail-cct/CA1-In-class-Demo.git, -->
-<!-- which was adjusted and mofidied in order to create the "Timepieces" Web App -->

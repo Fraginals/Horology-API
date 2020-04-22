@@ -1,10 +1,15 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:template match="/">
-                <table id="menuTable" class="indent">
+    
+<xsl:template match="/">
+                <html>
+                    <body>
+                        <h1>Sophisticated Simplicity</h1>
+                <table border="1" id="menuTable" class="indent">
                     <thead>
-                        <tr>
-                            <th colspan="6">Timepieces Catalogue</th><!--Implementing 6 columns for the table -->
+                        <tr bgcolor="#efffba">
+                            <th colspan="7"><h2 align="center"> CATALOG</h2></th><!--Implementing 6 columns for the table -->
+                        <hr></hr>
                         </tr>
                         <tr><!--all the watch's features that the user will use to input the info into the form!! -->
                             <th class="select">Select</th>
@@ -30,10 +35,10 @@
                                 <td align="center">
                                     <input name="item0" type="checkbox" />  <!--setting up the checkbox -->
                                 </td>
-                                <td>
+                                <td align="center">
                                     <xsl:value-of select="brand" /><!--setting up the brand title -->
                                 </td>
-                                <td align="right">
+                                <td align="center">
                                     <xsl:value-of select="price" /><!--setting up the price title -->
                                 </td>
                                  <td align="right">
@@ -50,6 +55,8 @@
                         </xsl:for-each>
                     </tbody>
                 </table><br/>
+                </body>
+             </html>
     </xsl:template>
 </xsl:stylesheet>
 

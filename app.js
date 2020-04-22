@@ -9,7 +9,9 @@ var http = require('http'), //This is a package that provides "HTTP" server func
     xmlParse = require('xslt-processor').xmlParse, //This module shows an XML document inputting XML Parser for JavaScript
     xsltProcess = require('xslt-processor').xsltProcess, //This module operates on two inputs: the XML document to transform, and when is used to apply transformations on the XML.
     xml2js = require('xml2js'), //This package converts XML files to JSON and to get back from JSON to XML
-    expAutoSan = require('express-autosanitizer');//This package Express middleware automatically sanitize user inputs against Javascript Injection
+    expAutoSan = require('express-autosanitizer'),//This package Express middleware automatically sanitize user inputs against Javascript Injection
+    multer  = require('multer');
+    upload = multer({ dest: module.exports.UPLOAD_PATH });
 
 var router = express(); //Defining the routing and using methods of the Express app object that correspond to HTTP
 var server = http.createServer(router);// This method creates an HTTP Server object that can listen to ports and execute a function, a requestListener, each time a request is made.
@@ -46,11 +48,11 @@ router.get('/', function(req, res){
 router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'}); //Generating a positive response to the client when the content requested is provided back demonstrating that it exists !!
-
+//here i started
     var xml = fs.readFileSync('Timepieces.xml', 'utf8'); //When we are allowed to read in the XML file
-    var xsl = fs.readFileSync('Timepieces.xsl', 'utf8'); //When we are allowed to read in the XSL file
+    var xslt = fs.readFileSync('Timepieces.xsl', 'utf8'); //When we are allowed to read in the XSL file
     var doc = xmlParse(xml); //This means that we are parsing the Timepieces.xml file
-    var stylesheet = xmlParse(xsl); //This means that we are parsing the Timepieces.xsl!
+    var stylesheet = xmlParse(xslt); //This means that we are parsing the Timepieces.xsl!
 
     var result = xsltProcess(doc, stylesheet); //Here we are implementing the transformation!!
 
